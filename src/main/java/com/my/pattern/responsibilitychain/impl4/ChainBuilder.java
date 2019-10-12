@@ -17,6 +17,7 @@ public class ChainBuilder {
                 final Handler handler = handlers.get(i);
                 final Invoker next = last;
                 last = new Invoker() {
+                    //因为这里是匿名内部类，放一个name属性，在debug的时候比较好分辨是哪个内部类的实例，没有实际逻辑作用
                     String name = handler.getClass().getName();
                     @Override
                     public void invoke(PurchaseRequest purchaseRequest) {
