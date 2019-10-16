@@ -18,7 +18,7 @@ public interface Publisher {
     void removeObserver(Observer observer);
 
     /**
-     * 发布新闻
+     * 通知观察者
      * @param news
      */
     void notifyObserver(News news);
