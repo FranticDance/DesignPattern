@@ -1,4 +1,4 @@
-package com.my.pattern.observer;
+package com.my.pattern.observer.observer;
 
 /**
  * @author lee
@@ -16,8 +16,12 @@ public class Client {
         ttPublisher.registerObserver(personB);
         ttPublisher.registerObserver(personC);
 
-        //创建消息
+        //创建消息（创建事件）
         News news = new News("奥运会开幕式", "");
-        ttPublisher.notifyObserver(news);
+        //触发事件
+        ttPublisher.publishNews(news);
+        System.out.println("---------------------");
+        news = new News("冬奥会开幕式", "");
+        ttPublisher.publishNews(news);
     }
 }
