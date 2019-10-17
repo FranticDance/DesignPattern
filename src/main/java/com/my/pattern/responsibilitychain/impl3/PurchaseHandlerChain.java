@@ -7,6 +7,8 @@ import java.util.List;
  * @author lee
  *
  * 这是另一种实现责任链的方式。Tomcat中执行servelet前的，执行过滤器链，就是这种方式
+ * 这种方式的实现思路是，通过在chain内部持有一个每个chain处理器的集合或者数组，然后通过移动
+ * 指针，来遍历chain，或者说滑动chain。
  */
 public class PurchaseHandlerChain implements HandlerChain {
     /**

@@ -1,8 +1,8 @@
-package com.my.pattern.observer;
+package com.my.pattern.observer.observer;
 
 /**
  * @author lee
- * 报社抽象接口
+ * 报社抽象接口，被观察者抽象接口
  */
 public interface Publisher {
     /**
@@ -19,8 +19,7 @@ public interface Publisher {
 
     /**
      * 通知观察者
-     * @param news
      */
-    void notifyObserver(News news);
+    void notifyObserver();
 
 }

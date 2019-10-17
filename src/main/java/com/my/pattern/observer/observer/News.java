@@ -1,8 +1,8 @@
-package com.my.pattern.observer;
+package com.my.pattern.observer.observer;
 
 /**
  * @author lee
- * 新闻类
+ * 新闻类. 封装了事件
  */
 public class News {
     private String title;

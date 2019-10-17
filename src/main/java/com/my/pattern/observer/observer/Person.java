@@ -1,4 +1,4 @@
-package com.my.pattern.observer;
+package com.my.pattern.observer.observer;
 
 public class Person implements Observer {
     private String name;

@@ -5,7 +5,13 @@ import java.util.List;
 
 /**
  * @author lee
+ *  这种方式是Dubbo中构建Filter责任链的方式，这里做一个简单模拟
+ *  其特点是，通过Java匿名内部类和Final机制，遍历chain的处理器时，构建出链表结构，来使
+ *  filter成链，这种机制下，每个节点，虽然没有显示的持有next引用，
+ *  但是能达到相同的效果。老厉害了！
  *
+ *  知识点延伸：匿名内部类、Final  ->匿名内部类内部若使用了外部局部变量，则该局部变量必须是final（JKD8取消了这个
+ *  限制，但其实是编译器自己加的，相当于没变）  -> 闭包  -> Java编译器实现的只是capture-by-value，并没有实现capture-by-reference
  *
  */
 public class ChainBuilder {
