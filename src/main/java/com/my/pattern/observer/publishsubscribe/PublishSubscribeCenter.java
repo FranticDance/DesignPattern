@@ -22,7 +22,7 @@ public class PublishSubscribeCenter<M> {
             notifySubscribe(publisherName,msg);
             return;
         }
-        //非立即发送
+        //非立即发送,将消息封装为Msg，存储在队列中
         Msg<M> storeMsg = new Msg<M>(publisherName, msg);
         //若存储队列已满，则直接发送消息
         if(!queue.offer(storeMsg)){
