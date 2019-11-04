@@ -1,5 +1,8 @@
 package com.my.pattern.observer.observer;
 
+/**
+ * 观察者实现类
+ */
 public class Person implements Observer {
     private String name;
 
