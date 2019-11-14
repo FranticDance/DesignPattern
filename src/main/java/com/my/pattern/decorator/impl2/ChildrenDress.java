@@ -1,4 +1,4 @@
-package com.my.pattern.Decorator.impl2;
+package com.my.pattern.decorator.impl2;
 
 /**
  * 装饰模式基本组件实现类，提供功能的基本实现。

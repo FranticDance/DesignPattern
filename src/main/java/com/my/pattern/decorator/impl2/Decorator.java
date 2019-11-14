@@ -1,4 +1,4 @@
-package com.my.pattern.Decorator.impl2;
+package com.my.pattern.decorator.impl2;
 
 /**
  * 装饰模式基础抽象装饰类

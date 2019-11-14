@@ -1,10 +1,11 @@
-package com.my.pattern.Decorator.impl1;
+package com.my.pattern.decorator.impl2;
 
+/**
+ * 实际装饰类
+ */
 public class MotherDecorator extends Decorator {
-    private Dress dress;
-
     public MotherDecorator(Dress dress) {
-        this.dress = dress;
+        super(dress);
     }
 
     private void wearingCoat(){
@@ -13,7 +14,7 @@ public class MotherDecorator extends Decorator {
 
     @Override
     public void wearingClothes() {
-        dress.wearingClothes();
+        super.wearingClothes();
         wearingCoat();
     }
 }

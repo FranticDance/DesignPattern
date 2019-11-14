@@ -1,4 +1,4 @@
-package com.my.pattern.Decorator.impl1;
+package com.my.pattern.decorator.impl1;
 
 public class Test {
     public static void main(String[] args) {

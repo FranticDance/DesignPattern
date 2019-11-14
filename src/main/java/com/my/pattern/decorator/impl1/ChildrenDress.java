@@ -1,4 +1,4 @@
-package com.my.pattern.Decorator.impl1;
+package com.my.pattern.decorator.impl1;
 
 public class ChildrenDress extends Dress {
     private String name = "小明";
