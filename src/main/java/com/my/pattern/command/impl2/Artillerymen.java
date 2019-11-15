@@ -1,4 +1,5 @@
-package com.my.pattern.command.impl1;
+package com.my.pattern.command.impl2;
+
 
 /**
  * 具体的命令执行者

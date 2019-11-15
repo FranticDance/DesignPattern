@@ -1,4 +1,5 @@
-package com.my.pattern.command.impl1;
+package com.my.pattern.command.impl2;
+
 
 /**
  * 具体的命令执行者
@@ -10,4 +11,5 @@ public class Infantry extends AbstractSoldier {
     public void executeCommand(String command) {
         System.out.println("我是步兵，我收到命令：" + command + ",马上执行！！");
     }
+
 }
