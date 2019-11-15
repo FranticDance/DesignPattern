@@ -2,6 +2,8 @@ package com.my.pattern.command.impl1;
 
 /**
  * 将军客户端
+ *
+ * @author lee
  */
 public class GeneralClient {
     public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class GeneralClient {
         //创建步兵
         Infantry infantry = new Infantry();
         //创建冲锋命令
-        AssaultCommand assaultCommand = new AssaultCommand(infantry, "向前冲锋500米");
+        AbstractCommand assaultCommand = new AssaultCommand(infantry, "向前冲锋500米");
         //下达命令
         orderlyInvoker.setCommand(assaultCommand);
         orderlyInvoker.action();
@@ -20,7 +22,7 @@ public class GeneralClient {
         //创建炮兵
         Artillerymen artillerymen = new Artillerymen();
         //创建命令
-        BombardCommand bombardCommand = new BombardCommand(artillerymen, "向目标诸元炮击");
+        AbstractCommand bombardCommand = new BombardCommand(artillerymen, "向目标诸元炮击");
         //下达命令
         orderlyInvoker.setCommand(bombardCommand);
         orderlyInvoker.action();

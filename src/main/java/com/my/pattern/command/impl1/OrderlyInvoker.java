@@ -6,9 +6,9 @@ package com.my.pattern.command.impl1;
  * 传令兵
  */
 public class OrderlyInvoker {
-    private Command command;
+    private AbstractCommand command;
 
-    public void setCommand(Command command) {
+    public void setCommand(AbstractCommand command) {
         this.command = command;
     }
 

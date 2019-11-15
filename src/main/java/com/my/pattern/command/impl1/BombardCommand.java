@@ -5,10 +5,10 @@ package com.my.pattern.command.impl1;
  *
  * 封装炮兵进行炮击的命令
  */
-public class BombardCommand extends Command{
-    private Soldier soldier;
+public class BombardCommand extends AbstractCommand {
+    private AbstractSoldier soldier;
     private String command;
-    public BombardCommand(Soldier soldier,String command) {
+    public BombardCommand(AbstractSoldier soldier, String command) {
         this.command = command;
         this.soldier = soldier;
     }
