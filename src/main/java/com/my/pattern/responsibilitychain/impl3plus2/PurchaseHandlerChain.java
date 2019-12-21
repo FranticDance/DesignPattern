@@ -40,6 +40,7 @@ public class PurchaseHandlerChain extends HandlerChain {
 
     @Override
     public void registerHandler(Handler handler){
+        //TODO 此处可能有多线程安全问题，可考虑加锁处理
         if(handlers == null){
             handlers = new CopyOnWriteArrayList<>();
         }
