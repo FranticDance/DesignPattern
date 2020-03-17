@@ -10,7 +10,7 @@ public class SchoolHandler implements Handler {
     @Override
     public void handle(PurchaseRequest purchaseRequest, HandlerChain handlerChain) {
         System.out.println("校主任SchoolHandler开始处理");
-        if(purchaseRequest.getPrice() >= 10000){
+        if(purchaseRequest.getPrice() >= 5000){
             System.out.println("校主任SchoolHandler will deal it");
 
             //将请求交给下一位处理器处理，这样的效果就是，整个链条，不管链条上的handler能不能处理，整个链条都会遍历一遍

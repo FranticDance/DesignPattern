@@ -9,7 +9,7 @@ public class SchoolHandler implements Handler {
     @Override
     public String handle(PurchaseRequest purchaseRequest, HandlerChain handlerChain) {
         System.out.println("校主任SchoolHandler开始处理");
-        if(purchaseRequest.getPrice() >= 10000){
+        if(purchaseRequest.getPrice() >= 5000){
             //TODO 真正的业务逻辑
             System.out.println("校主任SchoolHandler will deal it");
 
