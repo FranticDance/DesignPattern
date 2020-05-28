@@ -16,12 +16,9 @@ public class Client {
 
         //注册管理器,顺序不能变，因为内部是用List实际就是数组来保存的各个处理器
 
-
-        purchaseHandlerChain.registerHandler(schoolHandler);
-
-        purchaseHandlerChain.registerHandler(collegeHandler);
         purchaseHandlerChain.registerHandler(departmentHandler);
-
+        purchaseHandlerChain.registerHandler(collegeHandler);
+        purchaseHandlerChain.registerHandler(schoolHandler);
         PurchaseRequest purchaseRequest = new PurchaseRequest(300, "Book");
 
         purchaseHandlerChain.submit(purchaseRequest);
