@@ -1,8 +1,0 @@
-package com.my.pattern.command.impl1;
-
-/**
- * 抽象命令类
- */
-public abstract class AbstractCommand {
-    public abstract void execute();
-}
