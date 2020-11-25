@@ -1,0 +1,5 @@
+这种是类适配器模式。
+客户端Phone类需要output5V方法，而被适配的类（Charge220V）并没有output5V。
+为使客户端Phone能够使用Charge220V类，提供一个中间环节，即类Adapter，把Charge220V的API与Target类的API衔接起来。
+因为适配器（ChargeAdapter）与被适配的类（Charge220V）的关系，是继承关系。Adapter与Charge220V是继承关系，这决定了这个适配器模式是类适配器。
+
