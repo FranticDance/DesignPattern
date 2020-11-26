@@ -26,7 +26,7 @@ public class University extends OrganizationComponent{
 
     @Override
     public void print() {
-        System.out.println("***********" + getName() + "***********");
+        System.out.println("***********大学名称：" + getName() + "\t" + getDesc() + "***********");
         for (OrganizationComponent organization : organizations) {
             organization.print();
         }
