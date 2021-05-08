@@ -1,4 +1,4 @@
-package com.my.pattern.behavior.strategy;
+package com.my.pattern.behavior.strategy.demo1;
 
 public class OsPlanB implements Os {
     @Override
